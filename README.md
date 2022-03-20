@@ -15,7 +15,7 @@ https://ars.els-cdn.com/content/image/1-s2.0-S0093934X15001182-mmc1.zip
 Please install the necessary dependencies by doing:
 ```
 % python3 -m pip install -r requirements.txt  
-% python -m nltk.downloader stopwords
+% python3 -m nltk.downloader stopwords
 ```
 You also need to have R installed in order to be able to run the packages _rpy2_ and _pymer4_.
 
