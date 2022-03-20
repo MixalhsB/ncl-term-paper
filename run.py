@@ -75,7 +75,7 @@ def main():
         glove_model = load_glove_model('glove.840B.300d.txt')
     
     # Load ERP data
-    mat = scipy.io.loadmat('stimuli_erp.mat')
+    mat = scipy.io.loadmat('stimuli_erp_Frank_et_al_2015.mat')
     
     # Arrange data
     data = {'SentenceID': [], 'Token': [], 'WordLength': [], 'PosInSentence': [], 'Rejected': [], 'N400': [], 'P600': [], 'NgramSrp': [], 'PsgSrp': []}
