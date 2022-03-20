@@ -1,0 +1,8 @@
+rpy2
+nltk
+numpy
+scipy
+pandas
+pymer4
+matplotlib
+statsmodels
