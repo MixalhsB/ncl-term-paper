@@ -144,13 +144,13 @@ def main():
             glove_dists = pickle.load(f)
     df['GloVeDist'] = glove_dists
     
-    # Remove rows with no available "semantic distance" measure
+    # Remove rows with no available "semantic distance" measure or with only rejected ERP values (usually, sentence-initial/-final)
     rows_to_remove = []
     for i in range(len(df)):
         if df.GloVeDist[i] != df.GloVeDist[i]: # is NaN
             rows_to_remove.append(i)
         elif False not in df.Rejected[i]:
-            rows_to_remove.append(i)    
+            rows_to_remove.append(i)
     df = df.drop(df.index[rows_to_remove])
     df = df.reset_index(drop=True)
     
