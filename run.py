@@ -184,7 +184,7 @@ def main():
     df.Subject = df.Subject.astype('category')
     df.Item = df.Item.astype('category')
 
-    # Likehood ratio tests:
+    # Likelihood ratio tests:
     n4_reduced_model = fit_model(df, erp='N400', add_glove=False)
     n4_full_model = fit_model(df, erp='N400', add_glove=True)
     p6_reduced_model = fit_model(df, erp='P600', add_glove=False)
